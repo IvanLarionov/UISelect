@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UI-Select demo</title>
+	<link rel="stylesheet" href="css/jscrollpane.css">
+	<link rel="stylesheet" href="css/ui-select.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jscrollpane.js"></script>
+	<script type="text/javascript" src="js/ui-select.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			UISelect('#test-select');
+			$('#test-select').change(function (ev) {
+				$('#event-info .value').html($(this).val());
+			});
+		});
+	</script>
+</head>
+<body>
+	<select name="test" id="test-select" style="width: 200px;">
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+		<option value="3">Option 3</option>
+		<option value="4">Option 4</option>
+		<option value="5">Option 5</option>
+		<option value="6">Option 6</option>
+		<option value="7">Option 7</option>
+		<option value="8">Option 8</option>
+		<option value="9">Option 9</option>
+		<option value="10">Option 10</option>
+	</select>
+	<br>
+	<div id="event-info">
+		Event info: 
+		<span class="value"></span>
+	</div>
+</body>
+</html>
