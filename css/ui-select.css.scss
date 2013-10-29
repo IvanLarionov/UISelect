@@ -1,0 +1,244 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.ui-select {
+  .jspContainer
+  {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .jspPane
+  {
+    position: absolute;
+  }
+
+  .jspVerticalBar
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 100%;
+    background: red;
+  }
+
+  .jspHorizontalBar
+  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: red;
+  }
+
+  .jspVerticalBar *,
+  .jspHorizontalBar *
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  .jspCap
+  {
+    display: none;
+  }
+
+  .jspHorizontalBar .jspCap
+  {
+    float: left;
+  }
+
+  .jspTrack
+  {
+    background: #dde;
+    position: relative;
+  }
+
+  .jspDrag
+  {
+    background: #4b0049;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .jspHorizontalBar .jspTrack,
+  .jspHorizontalBar .jspDrag
+  {
+    float: left;
+    height: 100%;
+  }
+
+  .jspArrow
+  {
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .jspArrow.jspDisabled
+  {
+    cursor: default;
+    background: #80808d;
+  }
+
+  .jspVerticalBar .jspArrow
+  {
+    height: 16px;
+  }
+
+  .jspHorizontalBar .jspArrow
+  {
+    width: 16px;
+    float: left;
+    height: 100%;
+  }
+
+  .jspVerticalBar .jspArrow:focus
+  {
+    outline: none;
+  }
+
+  .jspCorner
+  {
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+  }
+
+  height: 23px;
+  width: 300px;
+  position: relative;
+  background: #fff;
+
+  &.disabled {
+    opacity: 0.5;
+  }
+  .border {
+    width: 100%;
+    height: 23px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #4b0049;
+    .text {
+      font-size: 14px;
+      line-height: 23px;
+      height: 23px;
+      color: #838383;
+      font-style: normal;
+      padding-left: 20px;
+      overflow: hidden;
+    }
+    .button {
+      position: absolute;
+      left: 100%;
+      top: 3px;
+      margin-left: -31px;
+      width: 19px;
+      height: 16px;
+      border-left: 4px solid #fff;
+      background: #4b0049;
+    }
+  }
+  .drop-items {
+    display: none;
+    border: 1px solid #010101;
+    position: absolute;
+    z-index: 50;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    .content {
+      height: auto;
+      max-height: 200px;
+      width: 100%;
+      overflow: auto;
+    }
+    .item {
+      display: block;
+      text-decoration: none !important;
+      font-size: 14px;
+      color: #333333;
+      background: #ebebeb;
+      height: 25px;
+      line-height: 25px;
+      overflow: hidden;
+      cursor: pointer;
+      .val {
+        display: none;
+      }
+      &.odd {
+        background: #fff;
+      }
+      &:hover {
+        text-decoration: underline !important;
+      }
+      .spacer {
+        display: block;
+        float: left;
+        width: 20px;
+        height: 25px;
+      }
+      .icon {
+        display: block;
+        float: left;
+        margin: 2px 10px;
+        width: 20px;
+        height: 20px;
+        img {
+          border: none;
+          margin: 0 !important;
+          line-height: 40px;
+          display: inline !important;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.product-detail {
+  .ui-select {
+    height: 32px;
+    .border {
+      height: 32px;
+      .text {
+        font-size: 18px;
+        line-height: 30px;
+        height: 30px;
+      }
+      .button {
+        top: 5px;
+        margin-left: -31px;
+        width: 19px;
+        height: 19px;
+        border-left: 4px solid #fff;
+        background: #4b0049; }
+    }
+    .drop-items {
+      top: 33px;
+      left: -1px;
+      .item {
+        font-size: 18px;
+        height: 32px;
+        line-height: 32px;
+        .spacer {
+          width: 20px;
+          height: 30px;
+        }
+        .icon {
+          height: 28px;
+        }
+      }
+    }
+  }
+}

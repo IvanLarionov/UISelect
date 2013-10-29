@@ -1,0 +1,171 @@
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+.ui-select {
+  height: 23px;
+  width: 300px;
+  position: relative;
+  background: #fff; }
+  .ui-select .jspContainer {
+    overflow: hidden;
+    position: relative; }
+  .ui-select .jspPane {
+    position: absolute; }
+  .ui-select .jspVerticalBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 100%;
+    background: red; }
+  .ui-select .jspHorizontalBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: red; }
+  .ui-select .jspVerticalBar *,
+  .ui-select .jspHorizontalBar * {
+    margin: 0;
+    padding: 0; }
+  .ui-select .jspCap {
+    display: none; }
+  .ui-select .jspHorizontalBar .jspCap {
+    float: left; }
+  .ui-select .jspTrack {
+    background: #dde;
+    position: relative; }
+  .ui-select .jspDrag {
+    background: #4b0049;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer; }
+  .ui-select .jspHorizontalBar .jspTrack,
+  .ui-select .jspHorizontalBar .jspDrag {
+    float: left;
+    height: 100%; }
+  .ui-select .jspArrow {
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer; }
+  .ui-select .jspArrow.jspDisabled {
+    cursor: default;
+    background: #80808d; }
+  .ui-select .jspVerticalBar .jspArrow {
+    height: 16px; }
+  .ui-select .jspHorizontalBar .jspArrow {
+    width: 16px;
+    float: left;
+    height: 100%; }
+  .ui-select .jspVerticalBar .jspArrow:focus {
+    outline: none; }
+  .ui-select .jspCorner {
+    background: #eeeef4;
+    float: left;
+    height: 100%; }
+  .ui-select.disabled {
+    opacity: 0.5; }
+  .ui-select .border {
+    width: 100%;
+    height: 23px;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #4b0049; }
+    .ui-select .border .text {
+      font-size: 14px;
+      line-height: 23px;
+      height: 23px;
+      color: #838383;
+      font-style: normal;
+      padding-left: 20px;
+      overflow: hidden; }
+    .ui-select .border .button {
+      position: absolute;
+      left: 100%;
+      top: 3px;
+      margin-left: -31px;
+      width: 19px;
+      height: 16px;
+      border-left: 4px solid #fff;
+      background: #4b0049; }
+  .ui-select .drop-items {
+    display: none;
+    border: 1px solid #010101;
+    position: absolute;
+    z-index: 50;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    overflow: hidden; }
+    .ui-select .drop-items .content {
+      height: auto;
+      max-height: 200px;
+      width: 100%;
+      overflow: auto; }
+    .ui-select .drop-items .item {
+      display: block;
+      text-decoration: none !important;
+      font-size: 14px;
+      color: #333333;
+      background: #ebebeb;
+      height: 25px;
+      line-height: 25px;
+      overflow: hidden;
+      cursor: pointer; }
+      .ui-select .drop-items .item .val {
+        display: none; }
+      .ui-select .drop-items .item.odd {
+        background: #fff; }
+      .ui-select .drop-items .item:hover {
+        text-decoration: underline !important; }
+      .ui-select .drop-items .item .spacer {
+        display: block;
+        float: left;
+        width: 20px;
+        height: 25px; }
+      .ui-select .drop-items .item .icon {
+        display: block;
+        float: left;
+        margin: 2px 10px;
+        width: 20px;
+        height: 20px; }
+        .ui-select .drop-items .item .icon img {
+          border: none;
+          margin: 0 !important;
+          line-height: 40px;
+          display: inline !important;
+          vertical-align: middle; }
+
+.product-detail .ui-select {
+  height: 32px; }
+  .product-detail .ui-select .border {
+    height: 32px; }
+    .product-detail .ui-select .border .text {
+      font-size: 18px;
+      line-height: 30px;
+      height: 30px; }
+    .product-detail .ui-select .border .button {
+      top: 5px;
+      margin-left: -31px;
+      width: 19px;
+      height: 19px;
+      border-left: 4px solid #fff;
+      background: #4b0049; }
+  .product-detail .ui-select .drop-items {
+    top: 33px;
+    left: -1px; }
+    .product-detail .ui-select .drop-items .item {
+      font-size: 18px;
+      height: 32px;
+      line-height: 32px; }
+      .product-detail .ui-select .drop-items .item .spacer {
+        width: 20px;
+        height: 30px; }
+      .product-detail .ui-select .drop-items .item .icon {
+        height: 28px; }
